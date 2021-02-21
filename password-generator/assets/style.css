@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: rgb(75, 146, 119);
+    text-align: center;
+}
+.container{
+    width: 550px;
+    background: rgb(156, 156, 156);
+    border: 2px dashed rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 25px 30px;
+
+}
+.container .text{
+    font-size: 34px;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    line-height: 35px;
+
+}
+.container .input-data{
+    margin: 30px 15px 30px 15px;
+}
+
+.input-data .display{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.input-data .display input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background:rgb(255, 255, 255);
+    border: 2px dasshed #111;
+    padding: 10px;
+    font-size: 18px;
+    color:rgb(75, 146, 119);
+    pointer-events: none;
+    user-select: none;
+}
+.display{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:rgb(255, 255, 255);
+    z-index: 999;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.input-data button{
+    height: 35px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+    background:rgb(255, 255, 255);
+    border: 2px solid #111;
+    color:rgb(75, 146, 119);
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.input-data button:hover{
+    background: #111;
+
+}
+.input{
+    text-decoration-color: rgb(75, 146, 119);
+}
